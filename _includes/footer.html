@@ -1,0 +1,22 @@
+<footer id="footer" class="midnight-blue">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                &copy; 2016 . All Rights Reserved.
+            </div>
+            <div class="col-sm-6">
+                <ul class="pull-right">
+                    {% for nav_item in site.data.nav %}
+                      {% if page.url == nav_item.link %}
+                        <li class="active">
+                      {% else %}
+                        <li>
+                      {% endif %}
+                        <a href="{{ nav_item.link }}">{{ nav_item.name }}</a>
+                      </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer><!--/#footer-->
