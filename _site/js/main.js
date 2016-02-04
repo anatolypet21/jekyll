@@ -3,7 +3,7 @@ jQuery(function($) {'use strict',
 	//#main-slider
 	$(function(){
 		$('#main-slider .carousel').carousel({
-			interval: 600000,
+			interval: 6000,
 			pause: "false"
 		});
 	});
